@@ -106,12 +106,12 @@
 				F7DC7AC81CE955960017ED0D /* AppDelegate.m */,
 				F7D4B9B21CEAB4E3007E3999 /* PICViewController.h */,
 				F7D4B9B31CEAB4E3007E3999 /* PICViewController.m */,
+				F7BF0A341CE9D59D002859D9 /* ImageViewController.h */,
+				F7BF0A351CE9D59D002859D9 /* ImageViewController.m */,
 				F7DC7ACD1CE955960017ED0D /* Main.storyboard */,
 				F7DC7AD01CE955960017ED0D /* Assets.xcassets */,
 				F7DC7AD51CE955960017ED0D /* Info.plist */,
 				F7DC7AC41CE955960017ED0D /* Supporting Files */,
-				F7BF0A341CE9D59D002859D9 /* ImageViewController.h */,
-				F7BF0A351CE9D59D002859D9 /* ImageViewController.m */,
 			);
 			path = TextDemo;
 			sourceTree = "<group>";

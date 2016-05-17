@@ -32,6 +32,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self initDeviece];
+    
+    self.title = @"人脸识别";
 }
 
 /**
@@ -82,7 +84,7 @@
     [captureSession addOutput:output];
     previewLayer = [[AVCaptureVideoPreviewLayer alloc]initWithSession:captureSession];
     previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    previewLayer.frame = CGRectMake(0, 64, self.view.bounds.size.width, 300);
+    previewLayer.frame = CGRectMake(0, 64, self.view.bounds.size.width, self.view.bounds.size.height - 64);
     [self.view.layer addSublayer:previewLayer];
     [captureSession startRunning];
     
@@ -106,6 +108,10 @@
             NSLog(@"未检测到人脸");
         }else{
             NSLog(@"检测到人脸");
+            [captureSession stopRunning];
+            ImageViewController *imag = [[ImageViewController alloc]init];
+            imag.headImg = resultImage;
+            [self.navigationController pushViewController:imag animated:YES];
         }
     }
 }
