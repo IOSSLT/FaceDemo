@@ -2,8 +2,8 @@
 //  PICViewController.h
 //  TextDemo
 //
-//  Created by 孙理涛 on 16/5/17.
-//  Copyright © 2016年 新浪视觉. All rights reserved.
+//  Created by 喵了个咪 on 16/5/16.
+//  Copyright © 2016年 mm. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
